@@ -1,0 +1,54 @@
+.App{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    
+}
+
+.Header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 70vh;
+    min-width: 100%;
+    background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+    
+}
+
+.Name{
+    color: whitesmoke;
+    margin-top: 3em;
+    font-size: 3em;
+}
+.Weight{
+    font-weight: 700;
+}
+
+.Images{
+    flex-direction: row;
+    margin-top: 0.3em;
+}
+
+.Images *{
+    margin-left: 1em
+}
+
+.Reference::before{
+    content: "\A";
+    white-space: pre;
+}
+
+.Portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.Project{
+    margin-top: 4em;
+    min-height: 25vh;
+    min-width: 60vw;
+    background-color: #EAEDED;
+}

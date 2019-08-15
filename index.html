@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="App">
+
+    <section class="Header container-fluid">
+        <h1 class="Name">Muhammad Tai's Portfolio</h1>
+        <p class="lead" style="font-size: 1.5em;">Projects Developed using HTML, CSS, JavaScript, Node.js, Vue.js, React, and Boostrap</p>
+        <div class="Images">
+            <a href="https://www.linkedin.com/in/muhammad-tai-29754a15b"><img  src="./images/001-linkedin.png" height="50" width="50"></img></a>
+            <a href="https://github.com/MuhammadTai"><img src="./images/GitHub-Mark-120px-plus.png" height="50" width="50"></img></a>
+            <a id="cv"><img id="cv" src="./images/002-document.png" height="50" width="50"></img></a> 
+        </div>
+        <button id="scrolldown" style="margin-top: 4em;" type="button" class="btn btn-success">See Portfolio</button>
+    </section>
+
+    <section class="Portfolio">
+        <h1 id="projectview" class="display-4" style="margin-top: 1.5em;">Projects</h1>
+        <div class="Project container">
+            <div class="row" style ="height: 100%">
+                <div class ="col" style="padding: 0; display: flex; flex-direction: column">
+                    <h1 class="h2" style="align-self: center; padding-top: 0.5em; ">Movie Database</h1>
+                    <h3 class="h2" style="padding: 0.5em" >A Website where users can browse through the highest rated movies search through a movie database. Developed in React.</h3>
+                    <button onclick= "window.location.href = 'https://github.com/MuhammadTai/Movies';" type="button" style="margin-left: 9em; margin-right: 9em; margin-bottom:1em" class="btn btn-info">Code</button>
+                    <button onclick="window.location.href = 'https://muhammadtai.github.io/Movies/';" type="button" style="margin-left: 9em; margin-right: 9em" class="btn btn-info">Application</button>
+                </div>
+                <div class ="col" style="height: 100%; padding: 0;">
+                    <img src="./images/moviewebapp.PNG" style="height: auto; width: 100%;" ></img>
+                </div>
+            </div>
+        </div>
+        <div class="Project container">
+                <div class="row" style ="height: 100%">
+                    <div class ="col" style="padding: 0; display: flex; flex-direction: column">
+                        <h1 class="h2" style="align-self: center; padding-top: 0.5em; ">Deck of Cards</h1>
+                        <h3 class="h2" style="padding: 0.5em" >A Web Application where users Shuffle, Sort and Draw from a Deck of Cards. Developed in Vue.</h3>
+                        <button onclick= "window.location.href = 'https://github.com/MuhammadTai/deckofcards';" type="button" style="margin-left: 9em; margin-right: 9em; margin-bottom:1em" class="btn btn-info">Code</button>
+                        <button onclick= "window.location.href = 'https://muhammadtai.github.io/deckofcards/';" type="button" style="margin-left: 9em; margin-right: 9em" class="btn btn-info">Application</button>
+                    </div>
+                    <div class ="col" style="height: 100%; padding: 0;">
+                        <img src="./images/deck1.PNG" style="height: auto; width: 100%;" ></img>
+                    </div>
+                </div>
+            </div>
+        <div class="Project container">
+                <div class="row" style ="height: 100%">
+                    <div class ="col" style="padding: 0; display: flex; flex-direction: column">
+                        <h1 class="h2" style="align-self: center; padding-top: 0.5em; ">IoT Front End</h1>
+                        <h3 class="h2" style="padding: 0.5em" >A Web Application where monitor sensors with the workplace. Developed in Vue. (Severs Have Been Shutdown)</h3>
+                        <button onclick= "window.location.href = 'https://github.com/MuhammadTai/Front-End-IoT';" type="button" style="margin-left: 9em; margin-right: 9em; margin-bottom:1em" class="btn btn-info">Code</button>
+                        <button type="button" style="margin-left: 9em; margin-right: 9em" class="btn btn-info">Application</button>
+                    </div>
+                    <div class ="col" style="height: 100%; padding: 0;">
+                        <img src="./images/website.PNG" style="height: auto; width: 100%;" ></img>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Project container">
+                    <div class="row" style ="height: 100%">
+                        <div class ="col" style="padding: 0; display: flex; flex-direction: column">
+                            <h1 class="h2" style="align-self: center; padding-top: 0.5em; ">A video game library API</h1>
+                            <h3 class="h2" style="padding: 0.5em" >An API which uses CRUD to serve users data on video games from a Mongo Database. Developed in Node.(Deployed to Heroku)</h3>
+                            <button onclick= "window.location.href = 'https://github.com/MuhammadTai/GameLibraryAPI';" type="button" style="margin-left: 9em; margin-right: 9em; margin-bottom:1em" class="btn btn-info">Code</button>
+                            <button type="button" style="margin-left: 9em; margin-right: 9em" class="btn btn-info">Application</button>
+                        </div>
+                        <div class ="col" style="height: 100%; padding: 0;">
+                            <img src="./images/gameapi.PNG" style="height: auto; width: 100%;" ></img>
+                        </div>
+                    </div>
+                </div>
+    
+    </section>
+
+    <section>
+        <p style="padding-top: 2em">Icon made by Freepik from www.flaticon.com
+        <span class="Reference">Icon made by Dave Gandy from www.flaticon.com</span></p>
+    </section>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="./script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
