@@ -2,7 +2,7 @@
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    
+    background-color: #A8ADB4
 }
 
 .Header{
@@ -61,6 +61,7 @@
     flex-direction: column;
     align-items: center;
     flex: 1;
+    background-color: #A8ADB4
 }
 
 .Project{
@@ -68,6 +69,11 @@
     min-height: 25vh;
     min-width: 60vw;
     background-color: #EAEDED;
+}
+
+.Footer{
+    margin-top: 1em;
+    background-color: #48c6ef;
 }
 
 @media (min-width: 768px) {
@@ -114,6 +120,7 @@
         flex-direction: column;
         align-items: center;
         flex: 1;
+        background-color: #A8ADB4
     }
     
     .Project{
@@ -121,5 +128,11 @@
         min-height: 25vh;
         min-width: 60vw;
         background-color: #EAEDED;
-    }    
+    }
+
+    .Footer{
+   
+        margin-top: 1em;
+        background-color: #48c6ef;
+    }
 }
