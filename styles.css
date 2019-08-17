@@ -65,7 +65,7 @@
 }
 
 .Project{
-    margin-top: 4em;
+    margin-top: 8em;
     min-height: 25vh;
     min-width: 60vw;
     background-color: #EAEDED;
@@ -147,7 +147,7 @@
     }
     
     .Project{
-        margin-top: 4em;
+        margin-top: 8em;
         min-height: 25vh;
         min-width: 60vw;
         background-color: #EAEDED;
