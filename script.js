@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+  
   // jQuery methods go here...
   $("#cv").click(function(){
     alert("Please Contact muhammadtai1@hotmail.com for a copy of a CV");
@@ -7,9 +7,53 @@ $(document).ready(function(){
 
   
   $("#scrolldown").click(function(){
-    $('html, body').animate({
+    $("html, body").animate({
         scrollTop: $("#projectview").offset().top
     }, 2000);
   });
+
+  $(".border0").hover(function(){
+    $(this).css({'border-color': '#EF5350'})
+    }, function() {
+      $(this).css({'border-color': 'lightgrey'})
+    }
+  )
+
+  $(".border1").hover(function(){
+    $(this).css({'border-color': '#42A5F5'})
+    }, function() {
+      $(this).css({'border-color': 'lightgrey'})
+    }
+  )
+
+  $(".border2").hover(function(){
+    $(this).css({'border-color': '#26A69A'})
+  }, function(){
+    $(this).css({'border-color': 'lightgrey'})
+    }
+  )
+
+  $(".border3").hover(function(){
+    $(this).css({'border-color': '#FFA726'})
+  }, function(){
+    $(this).css({'border-color': 'lightgrey'})
+    }
+  )
+  /*
+  $(window).scroll(function(){
+    $(".Project").each(function(index){
+      //offset().top is the top postion relative to document and outerheight is elemnt height (including margin)
+      var bottom_of_element = $(this).offset().top + $(this).outerHeight()
+      //window.scrolltop is the diffrence of pixels from document height to window height
+      //add to window height to find bottom postion
+      var bottom_of_window = $(window).scrollTop() + $(window).height()
+
+      if( bottom_of_window > bottom_of_element ){
+          $(this).animate({'margin-left': 'auto'}, 1000);
+      }
+    });
+  });
+  */
+
 
 });
