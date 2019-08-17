@@ -39,21 +39,21 @@ $(document).ready(function(){
     $(this).css({'border-color': 'lightgrey'})
     }
   )
-  /*
+  
   $(window).scroll(function(){
     $(".Project").each(function(index){
       //offset().top is the top postion relative to document and outerheight is elemnt height (including margin)
-      var bottom_of_element = $(this).offset().top + $(this).outerHeight()
+      var half_of_element = $(this).offset().top + ($(this).outerHeight() / 2)
       //window.scrolltop is the diffrence of pixels from document height to window height
       //add to window height to find bottom postion
       var bottom_of_window = $(window).scrollTop() + $(window).height()
 
-      if( bottom_of_window > bottom_of_element ){
-          $(this).animate({'margin-left': 'auto'}, 1000);
+      if( bottom_of_window > half_of_element ){
+          $(this).animate({'margin-top': '4em'}, 1000);
       }
     });
   });
-  */
+  
 
 
 });
