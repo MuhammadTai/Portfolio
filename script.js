@@ -15,28 +15,28 @@ $(document).ready(function(){
   $(".border0").hover(function(){
     $(this).css({'border-color': '#EF5350'})
     }, function() {
-      $(this).css({'border-color': 'lightgrey'})
+      $(this).css({'border-color': '#566573'})
     }
   )
 
   $(".border1").hover(function(){
     $(this).css({'border-color': '#42A5F5'})
     }, function() {
-      $(this).css({'border-color': 'lightgrey'})
+      $(this).css({'border-color': '#566573'})
     }
   )
 
   $(".border2").hover(function(){
     $(this).css({'border-color': '#26A69A'})
   }, function(){
-    $(this).css({'border-color': 'lightgrey'})
+    $(this).css({'border-color': '#566573'})
     }
   )
 
   $(".border3").hover(function(){
     $(this).css({'border-color': '#FFA726'})
   }, function(){
-    $(this).css({'border-color': 'lightgrey'})
+    $(this).css({'border-color': '#566573'})
     }
   )
   
