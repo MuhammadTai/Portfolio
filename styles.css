@@ -109,18 +109,7 @@
         font-size: 1.5rem;
         text-align: center;
     }
-    .Weight{
-        font-weight: 700;
-    }
-    
-    .Images{
-        flex-direction: row;
-        margin-top: 0.3em;
-    }
-    
-    .Images *{
-        margin-left: 1em
-    }
+
     .ProjTitle{
         margin-top: 1.5em;
         font-size: 3.5rem;
@@ -129,55 +118,10 @@
         padding: 0.5em; 
         font-size: 2rem
     }
-    .Reference::before{
-        content: "\A";
-        white-space: pre;
-    }
+
     .ProjName{
         align-self: center; 
         padding-top: 0.5em;
         font-size: 3rem;
-    }
-    .Portfolio{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex: 1;
-        background-color: #A8ADB4;   
-    }
-    
-    .Project{
-        margin-top: 8em;
-        min-height: 25vh;
-        min-width: 60vw;
-        background-color: #EAEDED;
-    }
-
-    .border0{
-        border-style: solid;
-        border-width: 2em;
-        border-color :  lightgrey;
-    }
-
-    .border1{
-        border-style: solid;
-        border-width: 2em;
-        border-color: lightgrey;
-    }
-
-    .border2{
-        border-style: solid;
-        border-width: 2em;
-        border-color: lightgrey;
-    }
-    .border3{
-        border-style: solid;
-        border-width: 2em;
-        border-color: lightgrey;
-    }
-
-    .Footer{ 
-        margin-top: 1em;
-        background-color: #48c6ef;
     }
 }
