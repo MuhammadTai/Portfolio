@@ -66,6 +66,7 @@
     flex: 1;
     background-color: #2C3E50;
     /*#A8ADB4*/
+    overflow: hidden;
 }
 
 .Project{
@@ -73,6 +74,7 @@
     min-height: 25vh;
     min-width: 60vw;
     background-color: #EAEDED;
+    overflow: hidden;
 }
 
 .border0{
