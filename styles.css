@@ -47,7 +47,8 @@
 }
 .ProjDesc{
     padding: 0.5em; 
-    font-size: 1rem
+    font-size: 1rem;
+    line-height: 1.3em;
 }
 .Reference::before{
     content: "\A";
