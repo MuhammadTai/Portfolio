@@ -21,11 +21,16 @@
     color: whitesmoke;
     margin-top: 5rem;
     font-size: 2rem;
-    text-align: center
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+
 }
 .Desc{
     font-size: 1rem;
     text-align: center;
+    font-family: Assistant, sans-serif;
+    font-weight: lighter;
 }
 .Weight{
     font-weight: 700;
@@ -44,11 +49,16 @@
     margin-top: 1.5em;
     font-size: 2rem;
     color: whitesmoke;
+    font-family: Roboto, sans-serif;
+    
+
 }
 .ProjDesc{
     padding: 0.5em; 
     font-size: 1rem;
     line-height: 1.3em;
+    font-family: Assistant, sans-serif;
+    font-weight: lighter;
 }
 .Reference::before{
     content: "\A";
@@ -59,6 +69,8 @@
     padding-top: 0.5em;
     font-size: 2rem;
     text-align: center;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
 }
 .Portfolio{
     display: flex;
@@ -73,7 +85,7 @@
 .Project{
     margin-top: 8em;
     min-height: 25vh;
-    min-width: 60vw;
+    min-width: 40vw;
     background-color: #EAEDED;
     overflow: hidden;
 }
@@ -105,6 +117,7 @@
 .Footer{
     margin-top: 1em;
     background-color: #48c6ef;
+    font-family: Assistant, sans-serif;
 }
 
 .movie-background{
@@ -135,11 +148,18 @@
 	background-position: center
 }
 
+.button-style{
+    font-family: Assistant; 
+    align-self:center; 
+    width: 10em; 
+    margin-bottom:1em
+}
+
 @media (min-width: 768px) {
     .Name{
         color: whitesmoke;
         margin-top: 5rem;
-        font-size: 3rem;
+        font-size: 3.5rem;
     }    
     .Desc{
         font-size: 1.5rem;
