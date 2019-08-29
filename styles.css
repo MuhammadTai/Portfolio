@@ -13,7 +13,7 @@
     align-items: center;
     min-height: 70vh;
     min-width: 100%;
-    background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+    background-image: linear-gradient(to right, #36d1dc, #5b86e5);;
     
 }
 
@@ -116,7 +116,7 @@
 
 .Footer{
     margin-top: 1em;
-    background-color: #48c6ef;
+    background: linear-gradient(to right, #36d1dc, #5b86e5);;
     font-family: Assistant, sans-serif;
 }
 
