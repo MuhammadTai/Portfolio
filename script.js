@@ -1,5 +1,9 @@
 $(document).ready(function(){
   
+  $(window).on('load', function () {
+    $(".Loader").fadeOut('slow');
+  });
+  
   // jQuery methods go here...
   $("#cv").click(function(){
     alert("Please Contact muhammadtai1@hotmail.com for a copy of a CV");
