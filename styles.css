@@ -5,7 +5,9 @@
     background-color: #2C3E50
     /*#A8ADB4*/
 }
-
+.Loader{
+	min-height: 100vh;
+}
 .Header{
     display: flex;
     flex-direction: column;
