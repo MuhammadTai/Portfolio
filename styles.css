@@ -7,6 +7,15 @@
 }
 .Loader{
 	min-height: 100vh;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	
+	
+}
+.Hidden{
+	display: hidden;
 }
 .Header{
     display: flex;
