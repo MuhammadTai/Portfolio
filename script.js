@@ -1,7 +1,6 @@
-$(".App").hide();  
 $(document).ready(function(){
   console.log("ready")
-
+  $(".App").hide();  
   $(window).on('load', function () {
 	console.log("loaded")
     /*setTimeout(function(){
