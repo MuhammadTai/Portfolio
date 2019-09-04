@@ -1,14 +1,14 @@
+$(".App").hide();  
 $(document).ready(function(){
   console.log("ready")
-  $(".App").hide();
-  
+
   $(window).on('load', function () {
 	console.log("loaded")
     /*setTimeout(function(){
 		console.log("timeout")
 
 	},1000)*/
-	$(".Loader").fadeOut('slow');
+	$(".Loader").fadeOut('fast');
 	$(".App").show();
 	//$("body").removeClass("Hidden");
   });
