@@ -125,12 +125,28 @@
     border-color: #566573;
 }
 
+.border-purple{
+    border-style: solid;
+    border-width: 2em;
+    border-color: #566573;
+}
+
+.border-purple:hover{
+    border-color: #8E44AD;
+}
+
 .Footer{
     margin-top: 1em;
     background: linear-gradient(to right, #36d1dc, #5b86e5);;
     font-family: Assistant, sans-serif;
 }
 
+.pinterest-background{
+    height: 20em;
+	background-image: url("./images/pinterestclone.PNG");
+	background-size: cover;
+	background-position: center
+}
 .movie-background{
 	height: 20em;
 	background-image: url("./images/moviewebapp.PNG");
@@ -191,6 +207,13 @@
         align-self: center; 
         padding-top: 0.5em;
         font-size: 3rem;
+    }
+
+    .pinterest-background{
+        background-image: url("./images/pinterestclone.PNG");
+        background-size: cover;
+        background-position: center;
+        height: auto;
     }
 
 	.movie-background{
