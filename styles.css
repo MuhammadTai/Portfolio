@@ -52,9 +52,11 @@
     margin-top: 0.3em;
 }
 
-.Images *{
-    margin-left: 1em
+.Images .col{
+    margin: .5em
 }
+
+
 
 .ProjTitle{
     margin-top: 1.5em;
