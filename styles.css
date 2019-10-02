@@ -24,7 +24,7 @@
     align-items: center;
     min-height: 70vh;
     min-width: 100%;
-    background-image: linear-gradient(to right, #36d1dc, #5b86e5);;
+    background-image: linear-gradient(to right, #36d1dc, #005288);;
     
 }
 
@@ -56,6 +56,26 @@
     margin: .5em;
 }
 
+a > img:hover {
+    filter: none;
+}
+
+#scrolldown{
+    height: 3em;
+    width: 8em;
+    text-align: center;
+    color: azure;
+    line-height: 2.5em;
+    background: transparent;
+    border-style: solid;
+    border-color: #D9D7B9; 
+    cursor: pointer;
+}
+
+#scrolldown:hover{
+    background: #D9D7B9;
+    color: black;
+}
 
 
 .ProjTitle{
@@ -139,7 +159,7 @@
 
 .Footer{
     margin-top: 1em;
-    background: linear-gradient(to right, #36d1dc, #5b86e5);;
+    background: linear-gradient(to right, #36d1dc, #005288);;
     font-family: Assistant, sans-serif;
 }
 
