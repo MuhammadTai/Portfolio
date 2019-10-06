@@ -35,7 +35,8 @@
     text-align: center;
     font-family: Roboto, sans-serif;
     font-weight: bold;
-
+    opacity: 0;
+    transition: opacity .5s linear;
 }
 .Desc{
     font-size: 1rem;
@@ -52,6 +53,13 @@
     margin-top: 0.3em;
 }
 
+
+.Desc,.Images,#scrolldown{
+    transform:translateY(2em);
+    animation: slide-up 1s forwards;
+}
+
+
 .Images .col{
     margin: .5em;
 }
@@ -65,7 +73,7 @@ a > img:hover {
     width: 8em;
     text-align: center;
     color: azure;
-    line-height: 2.5em;
+    line-height: 2.7em;
     background: transparent;
     border-style: solid;
     border-color: #D9D7B9; 
@@ -116,32 +124,41 @@ a > img:hover {
 }
 
 .Project{
-    margin-top: 8em;
+    margin-top: 4em;
     min-height: 25vh;
     min-width: 40vw;
     background-color: #EAEDED;
     overflow: hidden;
+    display: hidden;
+  
+    opacity: 0;
+    transition: opacity .5s linear;
 }
 
-.border0{
+.Visible{
+
+    opacity: 1;
+}
+
+.border-red{
     border-style: solid;
     border-width: 2em;
     border-color : #566573
     /*lightgrey;*/
 }
 
-.border1{
+.border-blue{
     border-style: solid;
     border-width: 2em;
     border-color: #566573;
 }
 
-.border2{
+.border-teal{
     border-style: solid;
     border-width: 2em;
     border-color: #566573;
 }
-.border3{
+.border-orange{
     border-style: solid;
     border-width: 2em;
     border-color: #566573;
@@ -153,21 +170,25 @@ a > img:hover {
     border-color: #566573;
 }
 
-.border-purple:hover{
-    border-color: #8E44AD;
-}
-
 .Footer{
-    margin-top: 1em;
-    background: linear-gradient(to right, #36d1dc, #005288);;
+    margin-top: 4em;
+    background: #005288;
     font-family: Assistant, sans-serif;
 }
+
+.pinterest-background,.movie-background,.deck-background,.iot-background,.api-background{
+    filter: grayscale(100%);
+    transition: 1s filter linear;
+}
+
+
+    
 
 .pinterest-background{
     height: 20em;
 	background-image: url("./images/pinterestclone.PNG");
 	background-size: cover;
-	background-position: center
+	background-position: center;
 }
 .movie-background{
 	height: 20em;
@@ -201,69 +222,41 @@ a > img:hover {
     font-family: Assistant; 
     align-self:center; 
     width: 10em; 
-    margin-bottom:1em
+    margin-bottom:1em;
+}
+
+.slide-up{
+    transform:translateY(8em);
+    animation-name: slide-up;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-up {
+    to { transform: translateY(0); }
 }
 
 @media (min-width: 768px) {
     .Name{
-        color: whitesmoke;
-        margin-top: 5rem;
         font-size: 3.5rem;
     }    
     .Desc{
         font-size: 1.5rem;
-        text-align: center;
     }
 
     .ProjTitle{
-        margin-top: 1.5em;
         font-size: 3.5rem;
-        color: whitesmoke;
     }
     .ProjDesc{
-        padding: 0.5em; 
         font-size: 2rem
     }
 
     .ProjName{
-        align-self: center; 
-        padding-top: 0.5em;
         font-size: 3rem;
     }
 
-    .pinterest-background{
-        background-image: url("./images/pinterestclone.PNG");
-        background-size: cover;
-        background-position: center;
+    .pinterest-background,.movie-background,.deck-background,.iot-background,.api-background{
         height: auto;
     }
-
-	.movie-background{
-		background-image: url("./images/moviewebapp.PNG");
-		background-size: cover;
-		background-position: center;
-		height: auto;
-	}
-
-	.deck-background{
-		background-image: url("./images/deck1.PNG");
-		background-size: cover;
-		background-position: center;
-		height: auto;
-	}
-
-	.iot-background{
-		background-image: url("./images/website.PNG");
-		background-size: cover;
-		background-position: left;
-		height: auto;
-	}
-
-	.api-background{
-		background-image: url("./images/gameapi.PNG");
-		background-size: cover;
-		background-position: center;
-		height: auto;
-	}	
 
 }
