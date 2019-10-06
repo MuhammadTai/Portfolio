@@ -30,52 +30,43 @@ $(document).ready(function(){
     }, 2000);
   });
 
-  $(".border-red").hover(function(){
-    $(this).css({'border-color': '#EF5350'})
-    $(".movie-background").css({'filter': 'none', 'transition': '1s filter linear'})
-    }, function() {
-      $(this).css({'border-color': '#566573'})
-      $(".movie-background").css({'filter': 'grayscale(100%)', 'transition': 'none'})
-    }
-  )
+  if ($(window).width() >= 576){
+    $(".border-red").hover(function(){
+      $(".movie-background").css({'filter': 'none', 'transition': '1s filter linear'})
+      }, function() {
+        $(".movie-background").css({'filter': 'grayscale(100%)', 'transition': 'none'})
+      }
+    )
 
-  $(".border-blue").hover(function(){
-    $(this).css({'border-color': '#42A5F5'})
-    $(".api-background").css({'filter': 'none', 'transition': '1s filter linear'})
-    }, function() {
-      $(this).css({'border-color': '#566573'})
-      $(".api-background").css({'filter': 'grayscale(100%)', 'transition': 'none'})
-    }
-  )
+    $(".border-blue").hover(function(){
+      $(".api-background").css({'filter': 'none', 'transition': '1s filter linear'})
+      }, function() {
+        $(".api-background").css({'filter': 'grayscale(100%)', 'transition': 'none'})
+      }
+    )
 
-  $(".border-teal").hover(function(){
-    $(this).css({'border-color': '#26A69A'})
-    $(".deck-background").css({'filter': 'none', 'transition': '1s filter linear'})
-  }, function(){
-    $(this).css({'border-color': '#566573'})
-    $(".deck-background").css({'filter': 'grayscale(100%)', 'transition': 'none'})
-    }
-  )
+    $(".border-teal").hover(function(){
+      $(".deck-background").css({'filter': 'none', 'transition': '1s filter linear'})
+    }, function(){
+      $(".deck-background").css({'filter': 'grayscale(100%)', 'transition': 'none'})
+      }
+    )
 
-  $(".border-orange").hover(function(){
-    $(this).css({'border-color': '#FFA726'})
-    $(".iot-background").css({'filter': 'none', 'transition': '1s filter linear'})
-  }, function(){
-    $(this).css({'border-color': '#566573'})
-    $(".iot-background").css({'filter': 'grayscale(100%)', 'transition': 'none'})
-    }
-  )
+    $(".border-orange").hover(function(){
+      $(".iot-background").css({'filter': 'none', 'transition': '1s filter linear'})
+    }, function(){
+      $(".iot-background").css({'filter': 'grayscale(100%)', 'transition': 'none'})
+      }
+    )
 
 
-  $(".border-purple").hover(function(){
-    $(this).css({'border-color': '#8E44AD'})
-    $(".pinterest-background").css({'filter': 'none', 'transition': '1s filter linear'})
-  }, function(){
-    $(this).css({'border-color': '#566573'})
-    $(".pinterest-background").css({'filter': 'grayscale(100%)', 'transition': 'none'})
-    }
-  )
-
+    $(".border-purple").hover(function(){
+      $(".pinterest-background").css({'filter': 'none', 'transition': '1s filter linear'})
+    }, function(){
+      $(".pinterest-background").css({'filter': 'grayscale(100%)', 'transition': 'none'})
+      }
+    )
+  }
   function projectSlide(){
     $(".Project").each(function(index){
       //offset().top is the top postion relative to document and outerheight is elemnt height (including margin)
